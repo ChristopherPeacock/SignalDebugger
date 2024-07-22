@@ -17,11 +17,9 @@ app.post('/get-location', (req, res) => {
             return;
         }
 
-     
         let latitude = null;
         let longitude = null;
 
-      
         const lines = stdout.split('\n');
         for (let line of lines) {
             if (line.includes('latitude')) {
